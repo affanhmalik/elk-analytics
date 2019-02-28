@@ -1,0 +1,30 @@
+{
+  "index_patterns": ["nr_events_*"],
+  "mappings": {
+    "violation": {
+      "_source": {
+        "enabled": true
+      },
+      "properties": {
+        "condition_id": {
+          "type": "integer"
+        },
+        "condition_name": {
+          "type": "keyword"          
+        },
+        "opened_at": {
+          "type": "date"
+        },
+        "closed_at": {
+          "type": "date"
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "violation_id": {
+          "type" : "integer"
+        }        
+      }
+    }
+  }
+}
